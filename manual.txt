@@ -1,0 +1,4 @@
+llevar los archivos aca presentes a la ruta root de xampp
+verificar que xampp este inicializado
+luego ir a la url localhost
+probar y verificar contenidos

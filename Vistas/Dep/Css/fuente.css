@@ -1,0 +1,12 @@
+/*@font-face{
+	font-family: 'robotobd';
+	src: url('Vistas/Dep/Libs/Extra/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+body{
+	font-family: 'robotobd';
+}*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,204 @@
+body {
+    margin: 0; /* Elimina los márgenes externos del cuerpo del documento */
+    padding: 0; /* Elimina los rellenos internos del cuerpo del documento */
+    height: 100vh; /* Establece la altura del cuerpo del documento al 100% de la ventana visible (viewport height) */
+}
+
+.slider.posicion {
+    height: 100%; /* Establece la altura del elemento al 100% de su elemento contenedor */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido excede la altura del elemento */
+}
+
+.container-menu {
+    height: 100%; /* Establece la altura del elemento al 100% de su elemento contenedor */
+    display: flex; /* Establece el elemento como un contenedor flexible */
+}
+
+.content-wrapper {
+    flex: 1; /* Establece la propiedad de flexibilidad del elemento como 1 (se expandirá para ocupar el espacio disponible) */
+    display: flex; /* Establece el elemento como un contenedor flexible */
+}
+
+.tab-content {
+    flex: 1; /* Establece la propiedad de flexibilidad del elemento como 1 (se expandirá para ocupar el espacio disponible) */
+    margin-left: 20px; /* Establece un margen izquierdo de 20px */
+}
+
+/* Otros estilos del archivo CSS */
+
+.contenedor {
+    width: 100%; /* Establece el ancho del elemento al 100% de su elemento contenedor */
+    margin: auto; /* Centra horizontalmente el elemento dentro de su elemento contenedor */
+}
+
+.logo h1 {
+    color: white; /* Establece el color del texto en blanco */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 2.5%; /* Establece un relleno del 2.5% en todas las direcciones */
+    font-size: 22px; /* Establece el tamaño de fuente en 22px */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el elemento */
+}
+
+#capa {
+    max-width: 100%; /* Establece el ancho máximo del elemento al 100% de su elemento contenedor */
+    max-height: 100vh; /* Establece la altura máxima del elemento al 100% de la ventana visible (viewport height) */
+    overflow: hidden; /* Oculta el contenido que excede las dimensiones del elemento */
+}
+
+.container-menu {
+    position: absolute; /* Establece el posicionamiento del elemento como absoluto */
+    background-color: white; /* Establece el color de fondo en blanco */
+    width: 100%; /* Establece el ancho del elemento al 100% de su elemento contenedor */
+    height: 100vh; /* Establece la altura del elemento al 100% de la ventana visible (viewport height) */
+    top: 0; /* Coloca el elemento en la parte superior de su elemento contenedor */
+    left: 0; /* Coloca el elemento en la parte izquierda de su elemento contenedor */
+    transition: all 500ms ease; /* Establece una transición de 500ms con una función de aceleración para todas las propiedades */
+    opacity: 0; /* Establece la opacidad del elemento a 0 (transparente) */
+    visibility: hidden; /* Oculta el elemento */
+}
+
+#btn-llamada-menu {
+    display: none; /* Oculta el elemento */
+}
+
+#btn-llamada-menu:checked ~ .container-menu {
+    opacity: 1; /* Establece la opacidad del elemento a 1 (visible) cuando el elemento #btn-llamada-menu está seleccionado */
+    visibility: visible; /* Muestra el elemento cuando el elemento #btn-llamada-menu está seleccionado */
+}
+
+.cont-menu {
+    width: 250px; /* Establece el ancho del elemento en 250px */
+    background-color: white; /* Establece el color de fondo en blanco */
+    transition: all 500ms ease; /* Establece una transición de 500ms con una función de aceleración para todas las propiedades */
+    transform: translatex(-100%); /* Desplaza el elemento hacia la izquierda en un 100% de su ancho */
+}
+
+#btn-llamada-menu:checked ~ .container-menu .cont-menu {
+    transform: translatex(0%); /* Desplaza el elemento hacia la izquierda en un 0% de su ancho cuando el elemento #btn-llamada-menu está seleccionado */
+}
+
+.cont-menu nav {
+    transform: translateY(15%); /* Desplaza el elemento hacia arriba en un 15% de su altura */
+}
+
+.m2 {
+    display: block; /* Establece el elemento como bloque */
+    color: black; /* Establece el color del texto en negro */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 9.4% 0% 0% 14.2%; /* Establece un relleno superior del 9.4%, ningún relleno derecho, ningún relleno inferior y un relleno izquierdo del 14.2% */
+    font-size: 23px; /* Establece el tamaño de fuente en 23px */
+    text-decoration: none; /* Elimina la decoración de subrayado del enlace */
+}
+
+label > h1 {
+    color: black; /* Establece el color del texto en negro */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 2.5px 0 0 34px; /* Establece un relleno superior de 2.5px, ningún relleno derecho, ningún relleno inferior y un relleno izquierdo de 34px */
+    font-size: 22px; /* Establece el tamaño de fuente en 22px */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el elemento */
+}
+
+.c-m > .l-m {
+    color: black; /* Establece el color del texto en negro */
+    padding: 7px 0px 3px 40px; /* Establece un relleno superior de 7px, ningún relleno derecho, un relleno inferior de 3px y un relleno izquierdo de 40px */
+}
+
+.contenidos {
+    width: 100%; /* Establece el ancho del elemento al 100% de su elemento contenedor */
+    height: 100vh; /* Establece la altura del elemento al 100% de la ventana visible (viewport height) */
+}
+
+.tab {
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el elemento */
+    padding: 10px 0px 0px 60px; /* Establece un relleno superior de 10px, ningún relleno derecho, ningún relleno inferior y un relleno izquierdo de 60px */
+}
+
+.tab.active {
+    font-weight: bold; /* Establece el peso de fuente en negrita para la pestaña activa */
+}
+
+.tab:not(.active) {
+    opacity: 0.5; /* Establece la opacidad de las pestañas no activas en 0.5 (semi-transparente) */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre las pestañas no activas */
+}
+
+.tab-content .content {
+    display: none; /* Oculta el contenido de las pestañas */
+}
+
+.tab-content .content.active {
+    display: block; /* Muestra el contenido de la pestaña activa */
+    position: relative; /* Establece la posición del contenido como relativa */
+}
+
+.box {
+    background-color: white; /* Establece el color de fondo en blanco */
+    min-height: 25rem; /* Establece la altura mínima del elemento en 25rem */
+    display: flex; /* Establece el elemento como un contenedor flexible */
+    flex-direction: row; /* Establece la dirección de los elementos secundarios en horizontal */
+    align-items: flex-end; /* Alinea los elementos secundarios en la parte inferior del contenedor */
+    justify-content: space-between; /* Distribuye los elementos secundarios con un espacio uniforme entre ellos */
+}
+
+.item {
+    padding: 1px; /* Establece un relleno de 1px en todas las direcciones */
+    width: 100%; /* Establece el ancho del elemento al 100% de su elemento contenedor */
+    height: 90vh; /* Establece la altura del elemento al 90% de la ventana visible (viewport height) */
+    gap: 10px; /* Establece el espacio entre los elementos secundarios a 10px */
+}
+
+.item > .imgStudio {
+    /*border: 1px solid #000;  Opcional, para visualizar el div */
+    align-self: flex-end; /* Alinea el elemento en la parte inferior del contenedor */
+    background-position: center; /* Establece la posición del fondo del elemento en el centro */
+}
+
+.contImgStudio {
+    background-color: white; /* Establece el color de fondo en blanco */
+    min-height: 25rem; /* Establece la altura mínima del elemento en 25rem */
+    display: flex; /* Establece el elemento como un contenedor flexible */
+    flex-direction: row; /* Establece la dirección de los elementos secundarios en horizontal */
+    align-items: flex-end; /* Alinea los elementos secundarios en la parte inferior del contenedor */
+}
+
+.imgStudio {
+    width: 70%; /* Establece el ancho del elemento al 70% */
+    height: 70%; /* Establece el alto del elemento al 70% */
+    background-image: url('../Libs/02-INFO/Info-Paqui-Casans-y-Vicente-Montanana.jpg'); /* Establece la imagen de fondo del elemento */
+    background-size: cover; /* Escala la imagen de fondo para cubrir todo el elemento */
+}
+
+.item > h1 {
+    font-size: 13px; /* Establece el tamaño de fuente en 13px */
+}
+
+.item > p {
+    font-size: smaller; /* Establece el tamaño de fuente en un tamaño más pequeño que el predeterminado */
+    color: #999999; /* Establece el color del texto en un tono de gris */
+    align-items: center; /* Alinea los elementos secundarios verticalmente en el centro */
+}
+
+p > strong {
+    color: black; /* Establece el color del texto en negro */
+}
+
+.uno {
+    width: 1050px; /* Establece el ancho del elemento en 1050px */
+    font-size: 15px; /* Establece el tamaño de fuente en 15px */
+    letter-spacing: 1px; /* Establece el espaciado entre letras en 1px */
+    display: flex; /* Establece el elemento como un contenedor flexible */
+    flex-direction: column; /* Establece la dirección de los elementos secundarios en vertical */
+    align-items: flex-end; /* Alinea los elementos secundarios en la parte inferior derecha del contenedor */
+    padding: 10px; /* Establece un relleno de 10px en todas las direcciones */
+}
+
+.item.uno {
+    display: flex; /* Establece el elemento como un contenedor flexible */
+    flex-direction: column; /* Establece la dirección de los elementos secundarios en vertical */
+    justify-content: flex-end; /* Alinea los elementos secundarios en la parte inferior del contenedor */
+    align-items: flex-start; /* Alinea los elementos secundarios en la parte inferior izquierda del contenedor */
+}
+
+.item.uno p {
+    text-align: justify; /* Justifica el texto dentro del elemento */
+}

@@ -1,0 +1,370 @@
+/* Reset CSS */
+
+/* Estilos para la fuente */
+
+/* Estilos para el slider */
+
+/* Estilos para el menú */
+
+/* Otros estilos del archivo CSS */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.slider.posicion {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.container-menu {
+    height: 100%;
+    display: flex;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.tab-content {
+    flex: 1;
+    margin-left: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Otros estilos del archivo CSS */
+.content {
+    width: 96%;
+    margin: auto;
+    height: 93vh;
+}
+
+.logo h1 {
+    color: white;
+    text-align: left;
+    padding: 2.5%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#capa {
+    max-width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.container-menu {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-llamada-menu {
+    display: none;
+}
+
+#btn-llamada-menu:checked~.container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 250px;
+    background-color: white;
+    transition: all 500ms ease;
+    transform: translatex(-100%);
+}
+
+#btn-llamada-menu:checked~.container-menu .cont-menu {
+    transform: translatex(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.m2 {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 9.4% 0% 0% 14.2%;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+label>h1 {
+    color: black;
+    text-align: left;
+    padding: 2.5px 0 0 34px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.c-m>.l-m {
+    color: black;
+    padding: 7px 0px 3px 40px;
+}
+
+.contenidos {
+    width: 100%;
+    height: 100vh;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 0px 0px 60px;
+}
+
+.tab.active {
+    font-weight: bold;
+}
+
+.tab:not(.active) {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.tab-content .content {
+    display: none;
+}
+
+.tab-content .content.active {
+    display: block;
+    position: relative;
+}
+
+.box {
+    background-color: white;
+    min-height: 25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    padding: 1px;
+    width: 100%;
+    height: 90vh;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+.item>.imgStudio {
+    background-position: center;
+}
+
+.imgStudio {
+    width: 60%;
+
+    height: 600px;
+
+    background-image: url('../Libs/02-INFO/Info-Paqui-Casans-y-Vicente-Montanana.jpg');
+    background-size: cover;
+}
+
+.item>h1 {
+    font-size: 11px;
+}
+
+.item>p {
+    font-size: 10px;
+    color: #999999;
+    align-items: center;
+    line-height: 22px;
+}
+
+p>strong {
+    color: black;
+}
+
+.uno {
+    width: 750px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.item.uno p {
+    text-align: justify;
+}
+
+.contentStudio {
+    padding: 20px;
+}
+
+
+
+
+
+
+.boxContacto {
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box1Cont {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.box2Cont {
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.subBox1{
+    padding: 0 5px 40% 0;
+    font-size: 20px;
+    text-align: end;    
+}
+.subBox1 pre{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-weight: 200; 
+}
+pre a{
+    text-decoration: none;
+    color: black;
+}
+.mail:active{
+    color: gray;
+}
+.subBox2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative; 
+}
+
+.imgContacto {
+  width: 80%;
+  height: 60%;
+  background-image: url('../Imgs/proyectos/carpeta1/imagen3.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+}
+div i{
+    font-size: 38px;
+    background-color: white;
+}
+
+.fa-instagram{
+    color: black;
+}
+.fa-instagram:active{
+    color: gray;
+}
+
+/*publicaciones*/
+.boxPublic {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Cambio a space-evenly */
+  align-items: center;
+  align-content: space-between; /* Nueva propiedad */
+}
+
+.fbp1,
+.fbp2 {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly; /* Cambio a space-between */
+
+}
+
+.sbp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+  height: 180%;
+  /* Estilos adicionales para las columnas (.sbp) */
+}
+.subBoxpub1{
+    background-image: url('../Imgs/pub/carpeta0/imagen0.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subBoxpub2{
+    background-image: url('../Imgs/pub/carpeta1/imagen0.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.subBoxpub3{
+    background-image: url('../Imgs/pub/carpeta2/imagen0.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.subBoxpub4{
+    background-image: url('../Imgs/pub/carpeta3/imagen0.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.subBoxpub5{
+    background-image: url('../Imgs/pub/carpeta4/imagen0.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.subBoxpub6{
+    background-image: url('../Imgs/pub/carpeta5/imagen0.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
